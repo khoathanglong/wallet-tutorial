@@ -11,7 +11,6 @@ import {
   Airdrop,
   Question,
 } from "../styles/StyledComponents.styles";
-
 const { Paragraph } = Typography;
 
 const Wallet: NextPage = () => {
@@ -86,12 +85,11 @@ const Wallet: NextPage = () => {
 
           {network === "devnet" && account && (
             <>
-              <Airdrop onClick={airdrop}>Airdrop</Airdrop>
               <Tooltip
                 title="Click to receive 1 devnet SOL into your account"
                 placement={"right"}
               >
-                <Question>?</Question>
+                  <Airdrop onClick={airdrop}>Airdrop</Airdrop>
               </Tooltip>
             </>
           )}
